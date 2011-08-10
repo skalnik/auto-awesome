@@ -15,6 +15,6 @@ if(typeof awesome.domId == 'undefined') {
   awesome.domId = window.prompt("What's your awesome button's DOM ID?", "");
 }
 
-setInterval('awesome("'+awesome.domId+'")', 45000);
+setInterval(function(){awesome(awesome.domId)}, 45000);
 awesome(awesome.domId);
 window.alert("I don't always awesome, but when I do, I do it automatically.")
